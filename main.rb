@@ -1,5 +1,5 @@
 require 'sinatra'
-require 'sinatra/reloader'
+require 'sinatra/reloader' if settings.development?
 require 'pry'
 require 'httparty'
 require_relative 'db_config'
