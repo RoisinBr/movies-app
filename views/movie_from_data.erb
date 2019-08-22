@@ -1,0 +1,66 @@
+<nav>
+    <a class="home" href="/">Home</a>
+</nav>
+<section>
+        <div class="row">
+            <div class="column"></div>
+            <div class="column sangria">
+                <h1>Movie Title:</h1>
+                <p><%= @movie[0]['title'] %></p>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+        <div class="row">
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column lavender">
+                <h2>Genre:</h2>
+                <p> <%= @movie[0]['genre'] %> </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column naval">
+                <h2>Plot:</h2>
+                <p> <%= @movie[0]['plot'] %></p>
+            </div>
+            <div class="column">
+            </div>
+            <div class="column">
+                <img src="<%= @movie[0]['image_url']%>" alt="Movie Poster"> 
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+        </div>
+        <div class="row">
+            <div class="column lavender">
+                <h2>Review Rating:</h2>
+                <p> <%= @movie[0]['review_rating'] %></p>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column naval">
+                <h2>Year Released:</h2>
+                <p> <%= @movie[0]['year_released']%></p>
+            </div>
+            <div class="column"></div>
+        </div>
+        <div class="row">
+            <div class="column">
+                
+            </div>
+            <div class="column sangria">
+                <h2>Rated:</h2>
+                <p> <%= @movie[0]['rated'] %></p>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column sangria">
+                <h2>Director:</h2>
+                <p> <%= @movie[0]['director']%></p>
+            </div>
+        </div>    
+    </section>

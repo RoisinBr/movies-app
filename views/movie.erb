@@ -1,0 +1,67 @@
+<nav>
+    <a class="home" href="/">Home</a>
+</nav>
+<section>
+    <div class="row">
+        <div class="column"></div>
+        <div class="column sangria">
+            <h1>Movie Title:</h1>
+            <p><%= @result["Title"] %></p>
+        </div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>
+    <div class="row">
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column lavender">
+            <h2>Genre:</h2>
+            <p> <%= @result["Genre"] %></p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="column naval">
+            <h2>Plot:</h2>
+            <p> <%= @result["Plot"] %></p>    
+        </div>
+        <div class="column">
+        </div>
+        <div class="column">
+            <img src="<%= @result["Poster"] %>" alt="Movie Poster">
+        </div>
+        <div class="column"></div>
+        <div class="column"></div>
+    </div>
+    <div class="row">
+        <div class="column lavender">
+            <h2>Review Rating:</h2>
+            <p> <%= @result["imdbRating"] %></p>
+        </div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column naval">
+            <h2>Year Released:</h2>
+            <p> <%= @result["Year"]%></p>
+        </div>
+        <div class="column"></div>
+    </div>
+    <div class="row">
+        <div class="column">
+            
+        </div>
+        <div class="column sangria">
+            <h2>Rated:</h2>
+            <p> <%= @result["Rated"] %></p>
+        </div>
+        <div class="column"></div>
+        <div class="column"></div>
+        <div class="column sangria">
+            <h2>Director:</h2>
+            <p> <%= @result["Director"] %></p>                
+        </div>
+    </div>    
+</section>
+  
